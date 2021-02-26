@@ -1,0 +1,1319 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>CSS Only Folio</title>
+        <link rel="stylesheet" href="css/main.css">
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="css/ie.css" media="screen, projection" rel="stylesheet" type=
+        "text/css" />
+    <![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/gif" href="favicon.gif" />
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-28367526-3']);
+		_gaq.push(['_setDomainName', 'xpy.github.io']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+
+<body>
+<div id="wrapper" >
+    <input type="radio" id="homeRadio" name="menuRadio" autocomplete="off" checked="checked"  >
+<input type="radio" id="galleryRadio" name="menuRadio" autocomplete="off">
+<input type="radio" id="aboutRadio" name="menuRadio" autocomplete="off">
+<input type="radio" id="contactRadio" name="menuRadio" autocomplete="off" >
+        <header>
+
+        <nav id="mainMenu">
+    <ul>
+        <li><label for="homeRadio"> Home</label></li>
+        <li><label for="galleryRadio"> Gallery</label></li>
+        <li><label for="aboutRadio"> About</label></li>
+        <li><label for="contactRadio"> Contact</label></li>
+    </ul>
+</nav>
+            </header>
+    <section id="content">
+        <div id="rotator">
+        <div id="home" class="page page1">
+    <h1>Welcome!</h1>
+
+    <div class="pageText">
+        <p>
+            This Site is an experimental Portfolio created to demonstrate the capabilities of
+            <abbr data-title="Cascading Style Sheets">CSS</abbr>. The challenge, was to create an
+            interactive and fully functional Portfolio without a single line of <abbr data-title="JavaScript">JS</abbr>.
+            I want to point out that this was made just for fun and this is <strong>not</strong> the right way to
+            create websites.
+        </p>
+
+        <p>
+            Even though all the content was created by <abbr data-title="See About Page For Details...">me</abbr>,
+            this is not a real Portfolio, the content is just for demonstrating purposes and that's the reason there
+            is no actual meaning or specific consistency to it. It could be
+            <abbr data-title="Common placeholder (filler) text">Lorem Ipsum</abbr>, it is nonsense poetic stuff instead.
+        </p>
+
+        <p>I hope you enjoy your stay.</p>
+    </div>
+</div>
+<div id="gallery" class="page page2">
+    <style type="text/css">
+                #imgRadio_0:checked ~ #bigImages #imgCont_0 { visibility:visible; opacity:1; -moz-transition-duration:700ms; -moz-transition-delay:300ms;-webkit-transition-duration:700ms; -webkit-transition-delay:300ms;}
+        #imgRadio_0:checked ~ #imgLabels [for='imgRadio_0'] .labelBg { left:0; width:100%; opacity:1; visibility:visible; text-indent:0;}
+        #imgRadio_0:checked ~ #infoButs [for='descCheck0'] {display:inline-block;}
+        #descCheck0:checked ~ #bigImages #imgCont_0 { -moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg); }
+        #descCheck0:checked ~ #infoButs [for='descCheck0'] { background-color: #fafafa;}
+            #imgRadio_1:checked ~ #bigImages #imgCont_1 { visibility:visible; opacity:1; -moz-transition-duration:700ms; -moz-transition-delay:300ms;-webkit-transition-duration:700ms; -webkit-transition-delay:300ms;}
+        #imgRadio_1:checked ~ #imgLabels [for='imgRadio_1'] .labelBg { left:0; width:100%; opacity:1; visibility:visible; text-indent:0;}
+        #imgRadio_1:checked ~ #infoButs [for='descCheck1'] {display:inline-block;}
+        #descCheck1:checked ~ #bigImages #imgCont_1 { -moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg); }
+        #descCheck1:checked ~ #infoButs [for='descCheck1'] { background-color: #fafafa;}
+            #imgRadio_2:checked ~ #bigImages #imgCont_2 { visibility:visible; opacity:1; -moz-transition-duration:700ms; -moz-transition-delay:300ms;-webkit-transition-duration:700ms; -webkit-transition-delay:300ms;}
+        #imgRadio_2:checked ~ #imgLabels [for='imgRadio_2'] .labelBg { left:0; width:100%; opacity:1; visibility:visible; text-indent:0;}
+        #imgRadio_2:checked ~ #infoButs [for='descCheck2'] {display:inline-block;}
+        #descCheck2:checked ~ #bigImages #imgCont_2 { -moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg); }
+        #descCheck2:checked ~ #infoButs [for='descCheck2'] { background-color: #fafafa;}
+            #imgRadio_3:checked ~ #bigImages #imgCont_3 { visibility:visible; opacity:1; -moz-transition-duration:700ms; -moz-transition-delay:300ms;-webkit-transition-duration:700ms; -webkit-transition-delay:300ms;}
+        #imgRadio_3:checked ~ #imgLabels [for='imgRadio_3'] .labelBg { left:0; width:100%; opacity:1; visibility:visible; text-indent:0;}
+        #imgRadio_3:checked ~ #infoButs [for='descCheck3'] {display:inline-block;}
+        #descCheck3:checked ~ #bigImages #imgCont_3 { -moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg); }
+        #descCheck3:checked ~ #infoButs [for='descCheck3'] { background-color: #fafafa;}
+            #imgRadio_4:checked ~ #bigImages #imgCont_4 { visibility:visible; opacity:1; -moz-transition-duration:700ms; -moz-transition-delay:300ms;-webkit-transition-duration:700ms; -webkit-transition-delay:300ms;}
+        #imgRadio_4:checked ~ #imgLabels [for='imgRadio_4'] .labelBg { left:0; width:100%; opacity:1; visibility:visible; text-indent:0;}
+        #imgRadio_4:checked ~ #infoButs [for='descCheck4'] {display:inline-block;}
+        #descCheck4:checked ~ #bigImages #imgCont_4 { -moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg); }
+        #descCheck4:checked ~ #infoButs [for='descCheck4'] { background-color: #fafafa;}
+            #imgRadio_5:checked ~ #bigImages #imgCont_5 { visibility:visible; opacity:1; -moz-transition-duration:700ms; -moz-transition-delay:300ms;-webkit-transition-duration:700ms; -webkit-transition-delay:300ms;}
+        #imgRadio_5:checked ~ #imgLabels [for='imgRadio_5'] .labelBg { left:0; width:100%; opacity:1; visibility:visible; text-indent:0;}
+        #imgRadio_5:checked ~ #infoButs [for='descCheck5'] {display:inline-block;}
+        #descCheck5:checked ~ #bigImages #imgCont_5 { -moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg); }
+        #descCheck5:checked ~ #infoButs [for='descCheck5'] { background-color: #fafafa;}
+    
+    </style>    <h1>Notes From The Lethargy</h1>
+    <div class="constrict">
+
+            <input type="radio" id="imgRadio_0" name="imagesRadio" checked>
+                <input type="checkbox" id="descCheck0" class="descCheck">
+                <input type="radio" id="imgRadio_1" name="imagesRadio" >
+                <input type="checkbox" id="descCheck1" class="descCheck">
+                <input type="radio" id="imgRadio_2" name="imagesRadio" >
+                <input type="checkbox" id="descCheck2" class="descCheck">
+                <input type="radio" id="imgRadio_3" name="imagesRadio" >
+                <input type="checkbox" id="descCheck3" class="descCheck">
+                <input type="radio" id="imgRadio_4" name="imagesRadio" >
+                <input type="checkbox" id="descCheck4" class="descCheck">
+                <input type="radio" id="imgRadio_5" name="imagesRadio" >
+                <input type="checkbox" id="descCheck5" class="descCheck">
+        
+        <ul id="bigImages">
+        <li style="background: url('files/gallery/1/dancing-face.jpg') 0 0 no-repeat; background-size: contain;" class='imgCont' id='imgCont_0'><div class="effImage" style="background: url('files/gallery/1/dancing-face.jpg') 0 0 no-repeat; background-size: contain;"></div>            <div class="imgDetailWrap" style="width:160px;height:160px; left: 70px;top: 30px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/dancing-face.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -206.26666666667px -88.4px;
+            width:471.46666666667px;
+            height:471.46666666667px;
+            left:-155.73333333333px;
+            top:-155.73333333333px;
+            -webkit-transform: scale(0.3393665158371);
+            -moz-transform: scale(0.3393665158371);
+            -ms-transform: scale(0.3393665158371);
+            -o-transform: scale(0.3393665158371);
+            transform: scale(0.3393665158371);
+            "
+            >
+                <div id="detailDesc_0" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 413ms ease-in-out 233ms;
+            -webkit-transition:text-shadow 413ms ease-in-out 233ms;
+            transition:text-shadow 413ms ease-in-out 233ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 113ms ease-in-out 488ms;
+            -webkit-transition:text-shadow 113ms ease-in-out 488ms;
+            transition:text-shadow 113ms ease-in-out 488ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 439ms ease-in-out 365ms;
+            -webkit-transition:text-shadow 439ms ease-in-out 365ms;
+            transition:text-shadow 439ms ease-in-out 365ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 125ms ease-in-out 103ms;
+            -webkit-transition:text-shadow 125ms ease-in-out 103ms;
+            transition:text-shadow 125ms ease-in-out 103ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 350ms ease-in-out 352ms;
+            -webkit-transition:text-shadow 350ms ease-in-out 352ms;
+            transition:text-shadow 350ms ease-in-out 352ms;"
+            >D</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 377ms ease-in-out 290ms;
+            -webkit-transition:text-shadow 377ms ease-in-out 290ms;
+            transition:text-shadow 377ms ease-in-out 290ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 487ms ease-in-out 408ms;
+            -webkit-transition:text-shadow 487ms ease-in-out 408ms;
+            transition:text-shadow 487ms ease-in-out 408ms;"
+            >n</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 401ms ease-in-out 396ms;
+            -webkit-transition:text-shadow 401ms ease-in-out 396ms;
+            transition:text-shadow 401ms ease-in-out 396ms;"
+            >c</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 321ms ease-in-out 284ms;
+            -webkit-transition:text-shadow 321ms ease-in-out 284ms;
+            transition:text-shadow 321ms ease-in-out 284ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 488ms ease-in-out 138ms;
+            -webkit-transition:text-shadow 488ms ease-in-out 138ms;
+            transition:text-shadow 488ms ease-in-out 138ms;"
+            >r</span></div>
+            </div></div><div class="detailBg"></div><div class="imgDescWrap"><div class="imgDescBg"></div><div id="imgDesc0" class="imgDesc"><p>The Dancer is a Spiritual Creature bound between the gates of Heaven and the Deepest pit of Hell, Cursed to dance the eternal dance of sorrow and despair.</p></div></div></li><li style="background: url('files/gallery/1/pisw_apo.jpg') 0 0 no-repeat; background-size: contain;" class='imgCont' id='imgCont_1'><div class="effImage" style="background: url('files/gallery/1/pisw_apo.jpg') 0 0 no-repeat; background-size: contain;"></div>            <div class="imgDetailWrap" style="width:140px;height:70px; left: 160px;top: 50px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/pisw_apo.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -377.06666666667px -117.83333333333px;
+            width:329.93333333333px;
+            height:164.96666666667px;
+            left:-94.966666666667px;
+            top:-47.483333333333px;
+            -webkit-transform: scale(0.42432814710042);
+            -moz-transform: scale(0.42432814710042);
+            -ms-transform: scale(0.42432814710042);
+            -o-transform: scale(0.42432814710042);
+            transform: scale(0.42432814710042);
+            "
+            >
+                <div id="detailDesc_1" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 185ms ease-in-out 288ms;
+            -webkit-transition:text-shadow 185ms ease-in-out 288ms;
+            transition:text-shadow 185ms ease-in-out 288ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 370ms ease-in-out 100ms;
+            -webkit-transition:text-shadow 370ms ease-in-out 100ms;
+            transition:text-shadow 370ms ease-in-out 100ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 475ms ease-in-out 192ms;
+            -webkit-transition:text-shadow 475ms ease-in-out 192ms;
+            transition:text-shadow 475ms ease-in-out 192ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 478ms ease-in-out 483ms;
+            -webkit-transition:text-shadow 478ms ease-in-out 483ms;
+            transition:text-shadow 478ms ease-in-out 483ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 480ms ease-in-out 132ms;
+            -webkit-transition:text-shadow 480ms ease-in-out 132ms;
+            transition:text-shadow 480ms ease-in-out 132ms;"
+            >M</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 317ms ease-in-out 483ms;
+            -webkit-transition:text-shadow 317ms ease-in-out 483ms;
+            transition:text-shadow 317ms ease-in-out 483ms;"
+            >i</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 381ms ease-in-out 248ms;
+            -webkit-transition:text-shadow 381ms ease-in-out 248ms;
+            transition:text-shadow 381ms ease-in-out 248ms;"
+            >l</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 446ms ease-in-out 235ms;
+            -webkit-transition:text-shadow 446ms ease-in-out 235ms;
+            transition:text-shadow 446ms ease-in-out 235ms;"
+            >k</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 498ms ease-in-out 269ms;
+            -webkit-transition:text-shadow 498ms ease-in-out 269ms;
+            transition:text-shadow 498ms ease-in-out 269ms;"
+            >y</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 268ms ease-in-out 171ms;
+            -webkit-transition:text-shadow 268ms ease-in-out 171ms;
+            transition:text-shadow 268ms ease-in-out 171ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 189ms ease-in-out 404ms;
+            -webkit-transition:text-shadow 189ms ease-in-out 404ms;
+            transition:text-shadow 189ms ease-in-out 404ms;"
+            >W</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 231ms ease-in-out 159ms;
+            -webkit-transition:text-shadow 231ms ease-in-out 159ms;
+            transition:text-shadow 231ms ease-in-out 159ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 370ms ease-in-out 491ms;
+            -webkit-transition:text-shadow 370ms ease-in-out 491ms;
+            transition:text-shadow 370ms ease-in-out 491ms;"
+            >y</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:85px;height:45px; left: 165px;top: 155px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/pisw_apo.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -388.85px -365.28333333333px;
+            width:200.31666666667px;
+            height:106.05px;
+            left:-57.658333333333px;
+            top:-30.525px;
+            -webkit-transform: scale(0.42432814710042);
+            -moz-transform: scale(0.42432814710042);
+            -ms-transform: scale(0.42432814710042);
+            -o-transform: scale(0.42432814710042);
+            transform: scale(0.42432814710042);
+            "
+            >
+                <div id="detailDesc_2" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 452ms ease-in-out 306ms;
+            -webkit-transition:text-shadow 452ms ease-in-out 306ms;
+            transition:text-shadow 452ms ease-in-out 306ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 166ms ease-in-out 362ms;
+            -webkit-transition:text-shadow 166ms ease-in-out 362ms;
+            transition:text-shadow 166ms ease-in-out 362ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 485ms ease-in-out 122ms;
+            -webkit-transition:text-shadow 485ms ease-in-out 122ms;
+            transition:text-shadow 485ms ease-in-out 122ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 213ms ease-in-out 313ms;
+            -webkit-transition:text-shadow 213ms ease-in-out 313ms;
+            transition:text-shadow 213ms ease-in-out 313ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 201ms ease-in-out 225ms;
+            -webkit-transition:text-shadow 201ms ease-in-out 225ms;
+            transition:text-shadow 201ms ease-in-out 225ms;"
+            >C</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 101ms ease-in-out 236ms;
+            -webkit-transition:text-shadow 101ms ease-in-out 236ms;
+            transition:text-shadow 101ms ease-in-out 236ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 399ms ease-in-out 359ms;
+            -webkit-transition:text-shadow 399ms ease-in-out 359ms;
+            transition:text-shadow 399ms ease-in-out 359ms;"
+            >t</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:69px;height:100px; left: 75px;top: 95px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/pisw_apo.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -176.75px -223.88333333333px;
+            width:162.61px;
+            height:235.66666666667px;
+            left:-46.805px;
+            top:-67.833333333333px;
+            -webkit-transform: scale(0.42432814710042);
+            -moz-transform: scale(0.42432814710042);
+            -ms-transform: scale(0.42432814710042);
+            -o-transform: scale(0.42432814710042);
+            transform: scale(0.42432814710042);
+            "
+            >
+                <div id="detailDesc_3" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 244ms ease-in-out 217ms;
+            -webkit-transition:text-shadow 244ms ease-in-out 217ms;
+            transition:text-shadow 244ms ease-in-out 217ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 434ms ease-in-out 263ms;
+            -webkit-transition:text-shadow 434ms ease-in-out 263ms;
+            transition:text-shadow 434ms ease-in-out 263ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 455ms ease-in-out 160ms;
+            -webkit-transition:text-shadow 455ms ease-in-out 160ms;
+            transition:text-shadow 455ms ease-in-out 160ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 340ms ease-in-out 308ms;
+            -webkit-transition:text-shadow 340ms ease-in-out 308ms;
+            transition:text-shadow 340ms ease-in-out 308ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 493ms ease-in-out 442ms;
+            -webkit-transition:text-shadow 493ms ease-in-out 442ms;
+            transition:text-shadow 493ms ease-in-out 442ms;"
+            >L</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 261ms ease-in-out 150ms;
+            -webkit-transition:text-shadow 261ms ease-in-out 150ms;
+            transition:text-shadow 261ms ease-in-out 150ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 350ms ease-in-out 137ms;
+            -webkit-transition:text-shadow 350ms ease-in-out 137ms;
+            transition:text-shadow 350ms ease-in-out 137ms;"
+            >m</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 283ms ease-in-out 124ms;
+            -webkit-transition:text-shadow 283ms ease-in-out 124ms;
+            transition:text-shadow 283ms ease-in-out 124ms;"
+            >p</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:75px;height:70px; left: 5px;top: 160px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/pisw_apo.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -11.783333333333px -377.06666666667px;
+            width:176.75px;
+            height:164.96666666667px;
+            left:-50.875px;
+            top:-47.483333333333px;
+            -webkit-transform: scale(0.42432814710042);
+            -moz-transform: scale(0.42432814710042);
+            -ms-transform: scale(0.42432814710042);
+            -o-transform: scale(0.42432814710042);
+            transform: scale(0.42432814710042);
+            "
+            >
+                <div id="detailDesc_4" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 113ms ease-in-out 349ms;
+            -webkit-transition:text-shadow 113ms ease-in-out 349ms;
+            transition:text-shadow 113ms ease-in-out 349ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 240ms ease-in-out 193ms;
+            -webkit-transition:text-shadow 240ms ease-in-out 193ms;
+            transition:text-shadow 240ms ease-in-out 193ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 257ms ease-in-out 381ms;
+            -webkit-transition:text-shadow 257ms ease-in-out 381ms;
+            transition:text-shadow 257ms ease-in-out 381ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 367ms ease-in-out 266ms;
+            -webkit-transition:text-shadow 367ms ease-in-out 266ms;
+            transition:text-shadow 367ms ease-in-out 266ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 264ms ease-in-out 121ms;
+            -webkit-transition:text-shadow 264ms ease-in-out 121ms;
+            transition:text-shadow 264ms ease-in-out 121ms;"
+            >M</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 219ms ease-in-out 136ms;
+            -webkit-transition:text-shadow 219ms ease-in-out 136ms;
+            transition:text-shadow 219ms ease-in-out 136ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 401ms ease-in-out 500ms;
+            -webkit-transition:text-shadow 401ms ease-in-out 500ms;
+            transition:text-shadow 401ms ease-in-out 500ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 193ms ease-in-out 340ms;
+            -webkit-transition:text-shadow 193ms ease-in-out 340ms;
+            transition:text-shadow 193ms ease-in-out 340ms;"
+            >n</span></div>
+            </div></div><div class="detailBg"></div><div class="imgDescWrap"><div class="imgDescBg"></div><div id="imgDesc1" class="imgDesc"><p>The Loneliest Road of them all, is the small stone road behind the <q>Cafe Terrace</q>.Strangely, it's always night on that road. Only cats enjoy themselves in that bitter cursed place</p></div></div></li><li style="background: url('files/gallery/1/TheUnconventionalQeen2.jpg') 0 0 no-repeat; background-size: contain;" class='imgCont' id='imgCont_2'><div class="effImage" style="background: url('files/gallery/1/TheUnconventionalQeen2.jpg') 0 0 no-repeat; background-size: contain;"></div>            <div class="imgDetailWrap" style="width:170px;height:120px; left: 120px;top: 90px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/TheUnconventionalQeen2.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -330px -247.5px;
+            width:467.5px;
+            height:330px;
+            left:-148.75px;
+            top:-105px;
+            -webkit-transform: scale(0.36363636363636);
+            -moz-transform: scale(0.36363636363636);
+            -ms-transform: scale(0.36363636363636);
+            -o-transform: scale(0.36363636363636);
+            transform: scale(0.36363636363636);
+            "
+            >
+                <div id="detailDesc_5" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 128ms ease-in-out 363ms;
+            -webkit-transition:text-shadow 128ms ease-in-out 363ms;
+            transition:text-shadow 128ms ease-in-out 363ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 478ms ease-in-out 272ms;
+            -webkit-transition:text-shadow 478ms ease-in-out 272ms;
+            transition:text-shadow 478ms ease-in-out 272ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 108ms ease-in-out 276ms;
+            -webkit-transition:text-shadow 108ms ease-in-out 276ms;
+            transition:text-shadow 108ms ease-in-out 276ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 300ms ease-in-out 377ms;
+            -webkit-transition:text-shadow 300ms ease-in-out 377ms;
+            transition:text-shadow 300ms ease-in-out 377ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 336ms ease-in-out 393ms;
+            -webkit-transition:text-shadow 336ms ease-in-out 393ms;
+            transition:text-shadow 336ms ease-in-out 393ms;"
+            >G</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 263ms ease-in-out 261ms;
+            -webkit-transition:text-shadow 263ms ease-in-out 261ms;
+            transition:text-shadow 263ms ease-in-out 261ms;"
+            >l</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 440ms ease-in-out 282ms;
+            -webkit-transition:text-shadow 440ms ease-in-out 282ms;
+            transition:text-shadow 440ms ease-in-out 282ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 182ms ease-in-out 288ms;
+            -webkit-transition:text-shadow 182ms ease-in-out 288ms;
+            transition:text-shadow 182ms ease-in-out 288ms;"
+            >s</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 106ms ease-in-out 203ms;
+            -webkit-transition:text-shadow 106ms ease-in-out 203ms;
+            transition:text-shadow 106ms ease-in-out 203ms;"
+            >s</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:50px;height:50px; left: 225px;top: 250px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/TheUnconventionalQeen2.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -618.75px -687.5px;
+            width:137.5px;
+            height:137.5px;
+            left:-43.75px;
+            top:-43.75px;
+            -webkit-transform: scale(0.36363636363636);
+            -moz-transform: scale(0.36363636363636);
+            -ms-transform: scale(0.36363636363636);
+            -o-transform: scale(0.36363636363636);
+            transform: scale(0.36363636363636);
+            "
+            >
+                <div id="detailDesc_6" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 298ms ease-in-out 276ms;
+            -webkit-transition:text-shadow 298ms ease-in-out 276ms;
+            transition:text-shadow 298ms ease-in-out 276ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 367ms ease-in-out 266ms;
+            -webkit-transition:text-shadow 367ms ease-in-out 266ms;
+            transition:text-shadow 367ms ease-in-out 266ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 463ms ease-in-out 381ms;
+            -webkit-transition:text-shadow 463ms ease-in-out 381ms;
+            transition:text-shadow 463ms ease-in-out 381ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 339ms ease-in-out 159ms;
+            -webkit-transition:text-shadow 339ms ease-in-out 159ms;
+            transition:text-shadow 339ms ease-in-out 159ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 195ms ease-in-out 214ms;
+            -webkit-transition:text-shadow 195ms ease-in-out 214ms;
+            transition:text-shadow 195ms ease-in-out 214ms;"
+            >Q</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 166ms ease-in-out 123ms;
+            -webkit-transition:text-shadow 166ms ease-in-out 123ms;
+            transition:text-shadow 166ms ease-in-out 123ms;"
+            >u</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 221ms ease-in-out 481ms;
+            -webkit-transition:text-shadow 221ms ease-in-out 481ms;
+            transition:text-shadow 221ms ease-in-out 481ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 140ms ease-in-out 345ms;
+            -webkit-transition:text-shadow 140ms ease-in-out 345ms;
+            transition:text-shadow 140ms ease-in-out 345ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 398ms ease-in-out 139ms;
+            -webkit-transition:text-shadow 398ms ease-in-out 139ms;
+            transition:text-shadow 398ms ease-in-out 139ms;"
+            >n</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:50px;height:50px; left: 10px;top: 100px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/TheUnconventionalQeen2.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -27.5px -275px;
+            width:137.5px;
+            height:137.5px;
+            left:-43.75px;
+            top:-43.75px;
+            -webkit-transform: scale(0.36363636363636);
+            -moz-transform: scale(0.36363636363636);
+            -ms-transform: scale(0.36363636363636);
+            -o-transform: scale(0.36363636363636);
+            transform: scale(0.36363636363636);
+            "
+            >
+                <div id="detailDesc_7" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 182ms ease-in-out 210ms;
+            -webkit-transition:text-shadow 182ms ease-in-out 210ms;
+            transition:text-shadow 182ms ease-in-out 210ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 149ms ease-in-out 252ms;
+            -webkit-transition:text-shadow 149ms ease-in-out 252ms;
+            transition:text-shadow 149ms ease-in-out 252ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 384ms ease-in-out 199ms;
+            -webkit-transition:text-shadow 384ms ease-in-out 199ms;
+            transition:text-shadow 384ms ease-in-out 199ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 244ms ease-in-out 297ms;
+            -webkit-transition:text-shadow 244ms ease-in-out 297ms;
+            transition:text-shadow 244ms ease-in-out 297ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 486ms ease-in-out 463ms;
+            -webkit-transition:text-shadow 486ms ease-in-out 463ms;
+            transition:text-shadow 486ms ease-in-out 463ms;"
+            >K</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 407ms ease-in-out 314ms;
+            -webkit-transition:text-shadow 407ms ease-in-out 314ms;
+            transition:text-shadow 407ms ease-in-out 314ms;"
+            >n</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 199ms ease-in-out 390ms;
+            -webkit-transition:text-shadow 199ms ease-in-out 390ms;
+            transition:text-shadow 199ms ease-in-out 390ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 216ms ease-in-out 137ms;
+            -webkit-transition:text-shadow 216ms ease-in-out 137ms;
+            transition:text-shadow 216ms ease-in-out 137ms;"
+            >t</span></div>
+            </div></div><div class="detailBg"></div><div class="imgDescWrap"><div class="imgDescBg"></div><div id="imgDesc2" class="imgDesc"><p>The Unconventional Queen Is always Smiling. Unconventional as she is, she is constantly looking at the opposite directions the others do, <q>It's a Gift!</q> She says <q>I have seen things no other man nor woman have ever, ever seen</q></p></div></div></li><li style="background: url('files/gallery/1/shaman.jpg') 0 0 no-repeat; background-size: contain;" class='imgCont' id='imgCont_3'><div class="effImage" style="background: url('files/gallery/1/shaman.jpg') 0 0 no-repeat; background-size: contain;"></div>            <div class="imgDetailWrap" style="width:50px;height:50px; left: 255px;top: 70px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/shaman.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -680px -186.66666666667px;
+            width:133.33333333333px;
+            height:133.33333333333px;
+            left:-41.666666666667px;
+            top:-41.666666666667px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_8" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 276ms ease-in-out 385ms;
+            -webkit-transition:text-shadow 276ms ease-in-out 385ms;
+            transition:text-shadow 276ms ease-in-out 385ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 413ms ease-in-out 179ms;
+            -webkit-transition:text-shadow 413ms ease-in-out 179ms;
+            transition:text-shadow 413ms ease-in-out 179ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 428ms ease-in-out 155ms;
+            -webkit-transition:text-shadow 428ms ease-in-out 155ms;
+            transition:text-shadow 428ms ease-in-out 155ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 298ms ease-in-out 349ms;
+            -webkit-transition:text-shadow 298ms ease-in-out 349ms;
+            transition:text-shadow 298ms ease-in-out 349ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 262ms ease-in-out 154ms;
+            -webkit-transition:text-shadow 262ms ease-in-out 154ms;
+            transition:text-shadow 262ms ease-in-out 154ms;"
+            >F</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 432ms ease-in-out 167ms;
+            -webkit-transition:text-shadow 432ms ease-in-out 167ms;
+            transition:text-shadow 432ms ease-in-out 167ms;"
+            >i</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 198ms ease-in-out 471ms;
+            -webkit-transition:text-shadow 198ms ease-in-out 471ms;
+            transition:text-shadow 198ms ease-in-out 471ms;"
+            >s</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 436ms ease-in-out 231ms;
+            -webkit-transition:text-shadow 436ms ease-in-out 231ms;
+            transition:text-shadow 436ms ease-in-out 231ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 461ms ease-in-out 412ms;
+            -webkit-transition:text-shadow 461ms ease-in-out 412ms;
+            transition:text-shadow 461ms ease-in-out 412ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 129ms ease-in-out 136ms;
+            -webkit-transition:text-shadow 129ms ease-in-out 136ms;
+            transition:text-shadow 129ms ease-in-out 136ms;"
+            >B</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 201ms ease-in-out 377ms;
+            -webkit-transition:text-shadow 201ms ease-in-out 377ms;
+            transition:text-shadow 201ms ease-in-out 377ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 430ms ease-in-out 360ms;
+            -webkit-transition:text-shadow 430ms ease-in-out 360ms;
+            transition:text-shadow 430ms ease-in-out 360ms;"
+            >n</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 236ms ease-in-out 173ms;
+            -webkit-transition:text-shadow 236ms ease-in-out 173ms;
+            transition:text-shadow 236ms ease-in-out 173ms;"
+            >e</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:50px;height:50px; left: 45px;top: 75px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/shaman.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -120px -200px;
+            width:133.33333333333px;
+            height:133.33333333333px;
+            left:-41.666666666667px;
+            top:-41.666666666667px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_9" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 241ms ease-in-out 143ms;
+            -webkit-transition:text-shadow 241ms ease-in-out 143ms;
+            transition:text-shadow 241ms ease-in-out 143ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 319ms ease-in-out 232ms;
+            -webkit-transition:text-shadow 319ms ease-in-out 232ms;
+            transition:text-shadow 319ms ease-in-out 232ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 357ms ease-in-out 498ms;
+            -webkit-transition:text-shadow 357ms ease-in-out 498ms;
+            transition:text-shadow 357ms ease-in-out 498ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 423ms ease-in-out 306ms;
+            -webkit-transition:text-shadow 423ms ease-in-out 306ms;
+            transition:text-shadow 423ms ease-in-out 306ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 300ms ease-in-out 342ms;
+            -webkit-transition:text-shadow 300ms ease-in-out 342ms;
+            transition:text-shadow 300ms ease-in-out 342ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 228ms ease-in-out 430ms;
+            -webkit-transition:text-shadow 228ms ease-in-out 430ms;
+            transition:text-shadow 228ms ease-in-out 430ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 241ms ease-in-out 466ms;
+            -webkit-transition:text-shadow 241ms ease-in-out 466ms;
+            transition:text-shadow 241ms ease-in-out 466ms;"
+            >p</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 404ms ease-in-out 265ms;
+            -webkit-transition:text-shadow 404ms ease-in-out 265ms;
+            transition:text-shadow 404ms ease-in-out 265ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 430ms ease-in-out 309ms;
+            -webkit-transition:text-shadow 430ms ease-in-out 309ms;
+            transition:text-shadow 430ms ease-in-out 309ms;"
+            >z</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:150px;height:50px; left: 150px;top: 25px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/shaman.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -400px -66.666666666667px;
+            width:400px;
+            height:133.33333333333px;
+            left:-125px;
+            top:-41.666666666667px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_10" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 362ms ease-in-out 117ms;
+            -webkit-transition:text-shadow 362ms ease-in-out 117ms;
+            transition:text-shadow 362ms ease-in-out 117ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 174ms ease-in-out 405ms;
+            -webkit-transition:text-shadow 174ms ease-in-out 405ms;
+            transition:text-shadow 174ms ease-in-out 405ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 439ms ease-in-out 338ms;
+            -webkit-transition:text-shadow 439ms ease-in-out 338ms;
+            transition:text-shadow 439ms ease-in-out 338ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 104ms ease-in-out 136ms;
+            -webkit-transition:text-shadow 104ms ease-in-out 136ms;
+            transition:text-shadow 104ms ease-in-out 136ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 384ms ease-in-out 146ms;
+            -webkit-transition:text-shadow 384ms ease-in-out 146ms;
+            transition:text-shadow 384ms ease-in-out 146ms;"
+            >V</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 259ms ease-in-out 242ms;
+            -webkit-transition:text-shadow 259ms ease-in-out 242ms;
+            transition:text-shadow 259ms ease-in-out 242ms;"
+            >u</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 348ms ease-in-out 487ms;
+            -webkit-transition:text-shadow 348ms ease-in-out 487ms;
+            transition:text-shadow 348ms ease-in-out 487ms;"
+            >l</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 249ms ease-in-out 169ms;
+            -webkit-transition:text-shadow 249ms ease-in-out 169ms;
+            transition:text-shadow 249ms ease-in-out 169ms;"
+            >t</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 465ms ease-in-out 112ms;
+            -webkit-transition:text-shadow 465ms ease-in-out 112ms;
+            transition:text-shadow 465ms ease-in-out 112ms;"
+            >u</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 101ms ease-in-out 471ms;
+            -webkit-transition:text-shadow 101ms ease-in-out 471ms;
+            transition:text-shadow 101ms ease-in-out 471ms;"
+            >r</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 240ms ease-in-out 442ms;
+            -webkit-transition:text-shadow 240ms ease-in-out 442ms;
+            transition:text-shadow 240ms ease-in-out 442ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 112ms ease-in-out 244ms;
+            -webkit-transition:text-shadow 112ms ease-in-out 244ms;
+            transition:text-shadow 112ms ease-in-out 244ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 433ms ease-in-out 478ms;
+            -webkit-transition:text-shadow 433ms ease-in-out 478ms;
+            transition:text-shadow 433ms ease-in-out 478ms;"
+            >F</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 347ms ease-in-out 239ms;
+            -webkit-transition:text-shadow 347ms ease-in-out 239ms;
+            transition:text-shadow 347ms ease-in-out 239ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 459ms ease-in-out 207ms;
+            -webkit-transition:text-shadow 459ms ease-in-out 207ms;
+            transition:text-shadow 459ms ease-in-out 207ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 215ms ease-in-out 174ms;
+            -webkit-transition:text-shadow 215ms ease-in-out 174ms;
+            transition:text-shadow 215ms ease-in-out 174ms;"
+            >t</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 342ms ease-in-out 268ms;
+            -webkit-transition:text-shadow 342ms ease-in-out 268ms;
+            transition:text-shadow 342ms ease-in-out 268ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 387ms ease-in-out 108ms;
+            -webkit-transition:text-shadow 387ms ease-in-out 108ms;
+            transition:text-shadow 387ms ease-in-out 108ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 348ms ease-in-out 286ms;
+            -webkit-transition:text-shadow 348ms ease-in-out 286ms;
+            transition:text-shadow 348ms ease-in-out 286ms;"
+            >r</span></div>
+            </div></div><div class="detailBg"></div><div class="imgDescWrap"><div class="imgDescBg"></div><div id="imgDesc3" class="imgDesc"><p>The Shaman, is the last man that have seen the last Unicorn alive. Unfortunately, he is also the man that saw him die. Now, he seeks to kill the man that saw the Unicorn before him</p></div></div></li><li style="background: url('files/gallery/1/insomnia.jpg') 0 0 no-repeat; background-size: contain;" class='imgCont' id='imgCont_4'><div class="effImage" style="background: url('files/gallery/1/insomnia.jpg') 0 0 no-repeat; background-size: contain;"></div>            <div class="imgDetailWrap" style="width:100px;height:80px; left: 185px;top: 115px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/insomnia.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -493.33333333333px -306.66666666667px;
+            width:266.66666666667px;
+            height:213.33333333333px;
+            left:-83.333333333333px;
+            top:-66.666666666667px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_11" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 271ms ease-in-out 179ms;
+            -webkit-transition:text-shadow 271ms ease-in-out 179ms;
+            transition:text-shadow 271ms ease-in-out 179ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 304ms ease-in-out 124ms;
+            -webkit-transition:text-shadow 304ms ease-in-out 124ms;
+            transition:text-shadow 304ms ease-in-out 124ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 282ms ease-in-out 206ms;
+            -webkit-transition:text-shadow 282ms ease-in-out 206ms;
+            transition:text-shadow 282ms ease-in-out 206ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 136ms ease-in-out 356ms;
+            -webkit-transition:text-shadow 136ms ease-in-out 356ms;
+            transition:text-shadow 136ms ease-in-out 356ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 450ms ease-in-out 421ms;
+            -webkit-transition:text-shadow 450ms ease-in-out 421ms;
+            transition:text-shadow 450ms ease-in-out 421ms;"
+            >D</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 380ms ease-in-out 270ms;
+            -webkit-transition:text-shadow 380ms ease-in-out 270ms;
+            transition:text-shadow 380ms ease-in-out 270ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 396ms ease-in-out 193ms;
+            -webkit-transition:text-shadow 396ms ease-in-out 193ms;
+            transition:text-shadow 396ms ease-in-out 193ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 173ms ease-in-out 282ms;
+            -webkit-transition:text-shadow 173ms ease-in-out 282ms;
+            transition:text-shadow 173ms ease-in-out 282ms;"
+            >t</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 305ms ease-in-out 132ms;
+            -webkit-transition:text-shadow 305ms ease-in-out 132ms;
+            transition:text-shadow 305ms ease-in-out 132ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 430ms ease-in-out 130ms;
+            -webkit-transition:text-shadow 430ms ease-in-out 130ms;
+            transition:text-shadow 430ms ease-in-out 130ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 230ms ease-in-out 116ms;
+            -webkit-transition:text-shadow 230ms ease-in-out 116ms;
+            transition:text-shadow 230ms ease-in-out 116ms;"
+            >H</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 353ms ease-in-out 281ms;
+            -webkit-transition:text-shadow 353ms ease-in-out 281ms;
+            transition:text-shadow 353ms ease-in-out 281ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 311ms ease-in-out 487ms;
+            -webkit-transition:text-shadow 311ms ease-in-out 487ms;
+            transition:text-shadow 311ms ease-in-out 487ms;"
+            >u</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 222ms ease-in-out 316ms;
+            -webkit-transition:text-shadow 222ms ease-in-out 316ms;
+            transition:text-shadow 222ms ease-in-out 316ms;"
+            >n</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 285ms ease-in-out 204ms;
+            -webkit-transition:text-shadow 285ms ease-in-out 204ms;
+            transition:text-shadow 285ms ease-in-out 204ms;"
+            >d</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:60px;height:100px; left: 40px;top: 50px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/insomnia.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -106.66666666667px -133.33333333333px;
+            width:160px;
+            height:266.66666666667px;
+            left:-50px;
+            top:-83.333333333333px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_12" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 338ms ease-in-out 292ms;
+            -webkit-transition:text-shadow 338ms ease-in-out 292ms;
+            transition:text-shadow 338ms ease-in-out 292ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 240ms ease-in-out 491ms;
+            -webkit-transition:text-shadow 240ms ease-in-out 491ms;
+            transition:text-shadow 240ms ease-in-out 491ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 247ms ease-in-out 436ms;
+            -webkit-transition:text-shadow 247ms ease-in-out 436ms;
+            transition:text-shadow 247ms ease-in-out 436ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 216ms ease-in-out 299ms;
+            -webkit-transition:text-shadow 216ms ease-in-out 299ms;
+            transition:text-shadow 216ms ease-in-out 299ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 454ms ease-in-out 222ms;
+            -webkit-transition:text-shadow 454ms ease-in-out 222ms;
+            transition:text-shadow 454ms ease-in-out 222ms;"
+            >H</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 467ms ease-in-out 253ms;
+            -webkit-transition:text-shadow 467ms ease-in-out 253ms;
+            transition:text-shadow 467ms ease-in-out 253ms;"
+            >o</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 157ms ease-in-out 439ms;
+            -webkit-transition:text-shadow 157ms ease-in-out 439ms;
+            transition:text-shadow 157ms ease-in-out 439ms;"
+            >r</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 412ms ease-in-out 475ms;
+            -webkit-transition:text-shadow 412ms ease-in-out 475ms;
+            transition:text-shadow 412ms ease-in-out 475ms;"
+            >n</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 467ms ease-in-out 386ms;
+            -webkit-transition:text-shadow 467ms ease-in-out 386ms;
+            transition:text-shadow 467ms ease-in-out 386ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 249ms ease-in-out 498ms;
+            -webkit-transition:text-shadow 249ms ease-in-out 498ms;
+            transition:text-shadow 249ms ease-in-out 498ms;"
+            >O</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 439ms ease-in-out 406ms;
+            -webkit-transition:text-shadow 439ms ease-in-out 406ms;
+            transition:text-shadow 439ms ease-in-out 406ms;"
+            >f</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 330ms ease-in-out 260ms;
+            -webkit-transition:text-shadow 330ms ease-in-out 260ms;
+            transition:text-shadow 330ms ease-in-out 260ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 338ms ease-in-out 114ms;
+            -webkit-transition:text-shadow 338ms ease-in-out 114ms;
+            transition:text-shadow 338ms ease-in-out 114ms;"
+            >N</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 496ms ease-in-out 451ms;
+            -webkit-transition:text-shadow 496ms ease-in-out 451ms;
+            transition:text-shadow 496ms ease-in-out 451ms;"
+            >i</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 244ms ease-in-out 483ms;
+            -webkit-transition:text-shadow 244ms ease-in-out 483ms;
+            transition:text-shadow 244ms ease-in-out 483ms;"
+            >g</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 171ms ease-in-out 148ms;
+            -webkit-transition:text-shadow 171ms ease-in-out 148ms;
+            transition:text-shadow 171ms ease-in-out 148ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 370ms ease-in-out 155ms;
+            -webkit-transition:text-shadow 370ms ease-in-out 155ms;
+            transition:text-shadow 370ms ease-in-out 155ms;"
+            >t</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 197ms ease-in-out 388ms;
+            -webkit-transition:text-shadow 197ms ease-in-out 388ms;
+            transition:text-shadow 197ms ease-in-out 388ms;"
+            >m</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 114ms ease-in-out 340ms;
+            -webkit-transition:text-shadow 114ms ease-in-out 340ms;
+            transition:text-shadow 114ms ease-in-out 340ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 225ms ease-in-out 483ms;
+            -webkit-transition:text-shadow 225ms ease-in-out 483ms;
+            transition:text-shadow 225ms ease-in-out 483ms;"
+            >r</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 445ms ease-in-out 155ms;
+            -webkit-transition:text-shadow 445ms ease-in-out 155ms;
+            transition:text-shadow 445ms ease-in-out 155ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 425ms ease-in-out 447ms;
+            -webkit-transition:text-shadow 425ms ease-in-out 447ms;
+            transition:text-shadow 425ms ease-in-out 447ms;"
+            >s</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:80px;height:55px; left: 145px;top: 55px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/insomnia.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -386.66666666667px -146.66666666667px;
+            width:213.33333333333px;
+            height:146.66666666667px;
+            left:-66.666666666667px;
+            top:-45.833333333333px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_13" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 120ms ease-in-out 333ms;
+            -webkit-transition:text-shadow 120ms ease-in-out 333ms;
+            transition:text-shadow 120ms ease-in-out 333ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 446ms ease-in-out 453ms;
+            -webkit-transition:text-shadow 446ms ease-in-out 453ms;
+            transition:text-shadow 446ms ease-in-out 453ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 329ms ease-in-out 460ms;
+            -webkit-transition:text-shadow 329ms ease-in-out 460ms;
+            transition:text-shadow 329ms ease-in-out 460ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 210ms ease-in-out 254ms;
+            -webkit-transition:text-shadow 210ms ease-in-out 254ms;
+            transition:text-shadow 210ms ease-in-out 254ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 401ms ease-in-out 182ms;
+            -webkit-transition:text-shadow 401ms ease-in-out 182ms;
+            transition:text-shadow 401ms ease-in-out 182ms;"
+            >E</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 345ms ease-in-out 413ms;
+            -webkit-transition:text-shadow 345ms ease-in-out 413ms;
+            transition:text-shadow 345ms ease-in-out 413ms;"
+            >t</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 227ms ease-in-out 442ms;
+            -webkit-transition:text-shadow 227ms ease-in-out 442ms;
+            transition:text-shadow 227ms ease-in-out 442ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 358ms ease-in-out 483ms;
+            -webkit-transition:text-shadow 358ms ease-in-out 483ms;
+            transition:text-shadow 358ms ease-in-out 483ms;"
+            >r</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 442ms ease-in-out 295ms;
+            -webkit-transition:text-shadow 442ms ease-in-out 295ms;
+            transition:text-shadow 442ms ease-in-out 295ms;"
+            >n</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 325ms ease-in-out 192ms;
+            -webkit-transition:text-shadow 325ms ease-in-out 192ms;
+            transition:text-shadow 325ms ease-in-out 192ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 408ms ease-in-out 371ms;
+            -webkit-transition:text-shadow 408ms ease-in-out 371ms;
+            transition:text-shadow 408ms ease-in-out 371ms;"
+            >l</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 283ms ease-in-out 491ms;
+            -webkit-transition:text-shadow 283ms ease-in-out 491ms;
+            transition:text-shadow 283ms ease-in-out 491ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 153ms ease-in-out 270ms;
+            -webkit-transition:text-shadow 153ms ease-in-out 270ms;
+            transition:text-shadow 153ms ease-in-out 270ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 495ms ease-in-out 268ms;
+            -webkit-transition:text-shadow 495ms ease-in-out 268ms;
+            transition:text-shadow 495ms ease-in-out 268ms;"
+            >r</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 223ms ease-in-out 151ms;
+            -webkit-transition:text-shadow 223ms ease-in-out 151ms;
+            transition:text-shadow 223ms ease-in-out 151ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 175ms ease-in-out 309ms;
+            -webkit-transition:text-shadow 175ms ease-in-out 309ms;
+            transition:text-shadow 175ms ease-in-out 309ms;"
+            >e</span></div>
+            </div></div><div class="detailBg"></div><div class="imgDescWrap"><div class="imgDescBg"></div><div id="imgDesc4" class="imgDesc"><p>All the nightmares that wake beings up from their sleep and they are immediately forgotten, gather together and come back to the material world to torture the sleepless minds of men</p></div></div></li><li style="background: url('files/gallery/1/screamers.jpg') 0 0 no-repeat; background-size: contain;" class='imgCont' id='imgCont_5'><div class="effImage" style="background: url('files/gallery/1/screamers.jpg') 0 0 no-repeat; background-size: contain;"></div>            <div class="imgDetailWrap" style="width:50px;height:90px; left: 240px;top: 100px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/screamers.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -640px -266.66666666667px;
+            width:133.33333333333px;
+            height:240px;
+            left:-41.666666666667px;
+            top:-75px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_14" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 191ms ease-in-out 239ms;
+            -webkit-transition:text-shadow 191ms ease-in-out 239ms;
+            transition:text-shadow 191ms ease-in-out 239ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 433ms ease-in-out 447ms;
+            -webkit-transition:text-shadow 433ms ease-in-out 447ms;
+            transition:text-shadow 433ms ease-in-out 447ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 314ms ease-in-out 259ms;
+            -webkit-transition:text-shadow 314ms ease-in-out 259ms;
+            transition:text-shadow 314ms ease-in-out 259ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 105ms ease-in-out 115ms;
+            -webkit-transition:text-shadow 105ms ease-in-out 115ms;
+            transition:text-shadow 105ms ease-in-out 115ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 144ms ease-in-out 407ms;
+            -webkit-transition:text-shadow 144ms ease-in-out 407ms;
+            transition:text-shadow 144ms ease-in-out 407ms;"
+            >D</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 431ms ease-in-out 127ms;
+            -webkit-transition:text-shadow 431ms ease-in-out 127ms;
+            transition:text-shadow 431ms ease-in-out 127ms;"
+            >E</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 338ms ease-in-out 468ms;
+            -webkit-transition:text-shadow 338ms ease-in-out 468ms;
+            transition:text-shadow 338ms ease-in-out 468ms;"
+            >D</span></div>
+            </div></div>            <div class="imgDetailWrap" style="width:50px;height:70px; left: 180px;top: 110px; ">
+            <div class="imgDetail"
+            style="background:  url('files/gallery/1/screamers.jpg') 0 0 no-repeat;
+            background-size: auto;
+            background-position: -480px -293.33333333333px;
+            width:133.33333333333px;
+            height:186.66666666667px;
+            left:-41.666666666667px;
+            top:-58.333333333333px;
+            -webkit-transform: scale(0.375);
+            -moz-transform: scale(0.375);
+            -ms-transform: scale(0.375);
+            -o-transform: scale(0.375);
+            transform: scale(0.375);
+            "
+            >
+                <div id="detailDesc_15" class="detailDesc"><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 371ms ease-in-out 370ms;
+            -webkit-transition:text-shadow 371ms ease-in-out 370ms;
+            transition:text-shadow 371ms ease-in-out 370ms;"
+            >T</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 426ms ease-in-out 299ms;
+            -webkit-transition:text-shadow 426ms ease-in-out 299ms;
+            transition:text-shadow 426ms ease-in-out 299ms;"
+            >h</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 500ms ease-in-out 292ms;
+            -webkit-transition:text-shadow 500ms ease-in-out 292ms;
+            transition:text-shadow 500ms ease-in-out 292ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 179ms ease-in-out 350ms;
+            -webkit-transition:text-shadow 179ms ease-in-out 350ms;
+            transition:text-shadow 179ms ease-in-out 350ms;"
+            > </span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 197ms ease-in-out 419ms;
+            -webkit-transition:text-shadow 197ms ease-in-out 419ms;
+            transition:text-shadow 197ms ease-in-out 419ms;"
+            >S</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 123ms ease-in-out 430ms;
+            -webkit-transition:text-shadow 123ms ease-in-out 430ms;
+            transition:text-shadow 123ms ease-in-out 430ms;"
+            >c</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 165ms ease-in-out 134ms;
+            -webkit-transition:text-shadow 165ms ease-in-out 134ms;
+            transition:text-shadow 165ms ease-in-out 134ms;"
+            >r</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 334ms ease-in-out 220ms;
+            -webkit-transition:text-shadow 334ms ease-in-out 220ms;
+            transition:text-shadow 334ms ease-in-out 220ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 401ms ease-in-out 120ms;
+            -webkit-transition:text-shadow 401ms ease-in-out 120ms;
+            transition:text-shadow 401ms ease-in-out 120ms;"
+            >a</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 463ms ease-in-out 383ms;
+            -webkit-transition:text-shadow 463ms ease-in-out 383ms;
+            transition:text-shadow 463ms ease-in-out 383ms;"
+            >m</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 134ms ease-in-out 222ms;
+            -webkit-transition:text-shadow 134ms ease-in-out 222ms;
+            transition:text-shadow 134ms ease-in-out 222ms;"
+            >e</span><span style="text-shadow:0 0 0 #333;
+            -moz-transition:text-shadow 120ms ease-in-out 124ms;
+            -webkit-transition:text-shadow 120ms ease-in-out 124ms;
+            transition:text-shadow 120ms ease-in-out 124ms;"
+            >r</span></div>
+            </div></div><div class="detailBg"></div><div class="imgDescWrap"><div class="imgDescBg"></div><div id="imgDesc5" class="imgDesc"><p>When the Judgement Comes, those who made no choice in fear of making a bad choice, will be left to the void between heaven and hell. Those that make no choice, have no place to belong, they will scream until the end of ages</p></div></div></li>    </ul>
+
+    <ul id="imgLabels">
+         <li>    <label for="imgRadio_0"  >The Dancer<div class="labelBg">The Dancer</div></label>
+        </li> <li>    <label for="imgRadio_1"  >Behind The Cafe<div class="labelBg">Behind The Cafe</div></label>
+        </li> <li>    <label for="imgRadio_2"  >The Unconventional<div class="labelBg">The Unconventional</div></label>
+        </li> <li>    <label for="imgRadio_3"  >The Shaman<div class="labelBg">The Shaman</div></label>
+        </li> <li>    <label for="imgRadio_4"  >Insomnia<div class="labelBg">Insomnia</div></label>
+        </li> <li>    <label for="imgRadio_5"  >The Screamers<div class="labelBg">The Screamers</div></label>
+        </li>    </ul>
+
+        <ul id="infoButs">
+             <li>        <label for="descCheck0" class="descCheckLabel"></label>
+            </li> <li>        <label for="descCheck1" class="descCheckLabel"></label>
+            </li> <li>        <label for="descCheck2" class="descCheckLabel"></label>
+            </li> <li>        <label for="descCheck3" class="descCheckLabel"></label>
+            </li> <li>        <label for="descCheck4" class="descCheckLabel"></label>
+            </li> <li>        <label for="descCheck5" class="descCheckLabel"></label>
+            </li>
+        </ul>
+    </div>
+</div><div id="about" class="page page3">
+    <h1>About...</h1>
+    <input type="checkbox" id="aboutPageCheck" name="aboutPageCheck">
+    <div class="plainPageWrap" style="text-align: center;">
+    <div class="plainPage" style="text-align: center;">
+        <h2 class="lined">The Creator</h2>
+
+        <p>
+            Hmm... My Name is Pavlos Chrisochoidis, I suck at this but I'll try...<br>
+            Ahem...
+        </p>
+        <p>
+            I am Web Developer from Greece and although I earn my bread through
+            Web Development, I don't consider myself a Professional, actually I don't consider myself a Professional in
+            any field, instead, I am an amateur in many, I code, I paint,I read, I write and I cook
+            (not always in that order and never all together...).
+        </p>
+
+        <p>
+            I got in Web Development some years ago (like... 4 I think?), and since my studies in College had nothing to
+            do with the web, I had to learn it all by myself, the first thing I learned is that www stands for
+            Work-Work-Work ( second was "Can't Style Shit" ) * Third was "Never Stop Telling Stupid Jokes".
+        </p>
+    </div>
+    <div class="plainPage" style="text-align: center;">
+        <h2 class="lined">The Project</h2>
+
+        <p> Using CSS to mimic things that were only possible with Javascript, such as tabs, clickable drop-down menus etc,
+            was always a challenge. In this Project, I tried gather all this 'tricks' I've learned or manifested,
+            to create this simple Portfolio. Not actually a portfolio but anyway...
+        </p>
+        <p>
+            Despite the fact that I used no Javascript at all, there is a lot of PHP behind this, mostly for repetitive
+            tasks, weird calculations and brain-damaging 2d and 3d transforms. I don't know if it could be
+            possible without PHP. I also used SASS ( for the first time in my life ) which also helped a lot, but I ended up with those
+            HUGE selectors. I didn't use any media queries and I don't plan to because the design sucks and I don't think it
+            could fit in a very small screen.
+        </p>
+        <p>
+            The Design is mine, I know I'm not so good at it but I tried my best to keep it as simple and minimal as I could.
+            The Drawings are also mine, they are details from bigger drawings actually.
+            I also wrote the little surreal descriptions which, as I said before, they are there just to fill the space.
+        </p>
+        <p>
+            I hope you Liked it and I'll be very glad if you spare some time to send me your impressions via the Contact Form.
+        </p>
+    </div>
+        <label for="aboutPageCheck" class="aboutPagesLabel"></label>
+    </div>
+</div><div id="contact" class="page page4">
+
+    <form action="#" onsubmit="return false;" id="contact-form" target="_blank" method="post"
+          enctype="application/x-www-form-urlencoded">
+        <div class="input-holder">
+            <div class="fakeInput" id="contact-exp">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="required">Required / Invalid</div>
+                        </td>
+                        <td>
+                            <div class="valid">Valid</div>
+                        </td>
+                        <td>
+                            <div class="optional">Optional</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="input-holder">
+            <input type="text" pattern="([a-z]|[A-Z]|[ ])*" id="name" placeholder="Name" required name="name">
+            <label for="name" data-value="Name">N</label>
+        </div>
+        <div class="input-holder">
+            <input type="email" id="mail" placeholder="e-mail" required name="mail">
+            <label for="mail" data-value="e-mail" style="line-height: 25px;">@</label>
+        </div>
+        <div class="input-holder">
+            <input type="url" id="site" placeholder="Site" optional name="site">
+            <label for="site" data-value="Personal Site">&</label>
+        </div>
+        <div class="input-holder">
+            <input type="text" id="subject" placeholder="Subject" optional pattern=".*" name="subject">
+            <label for="subject" data-value="Subject">?</label>
+        </div>
+        <div class="input-holder" >
+            <textarea rows="6" cols="5" placeholder="Text" id="text" required name="text"style="height: auto; "></textarea>
+            <label for="text" data-value="text">T</label>
+        </div>
+        <div class="input-holder">
+            <div class="fakeInput" id="stars">
+                                <input type="radio" id="star_5" autocomplete="off" name="stars_radio" value="5"><label
+                    class="star" for="star_5"></label>
+                                <input type="radio" id="star_4" autocomplete="off" name="stars_radio" value="4"><label
+                    class="star" for="star_4"></label>
+                                <input type="radio" id="star_3" autocomplete="off" name="stars_radio" value="3"><label
+                    class="star" for="star_3"></label>
+                                <input type="radio" id="star_2" autocomplete="off" name="stars_radio" value="2"><label
+                    class="star" for="star_2"></label>
+                                <input type="radio" id="star_1" autocomplete="off" name="stars_radio" value="1"><label
+                    class="star" for="star_1"></label>
+                                <label class="optional contact-info" data-value="Rate This Site">R</label>
+            </div>
+        </div>
+        <input type="submit" value="Submit Form" name="submit">
+    </form>
+        <div class="plainPage" style="text-align: center; width:100%;">
+            <h2 class="lined">Stalk me - Stalk you</h2>
+            <div id="socials">
+                <div class="social">
+                    <div class="notice">
+                        <div class="notice-inside">
+                            Temporarily Idle
+                        </div>
+                    </div>
+                    <a id="deviant" href="http://pachryso.deviantart.com" class="social-link"></a>
+                </div>
+                <div class="social">
+                    <div class="notice">
+                        <div class="notice-inside">
+                            Spectator
+                        </div>
+                    </div>
+                    <a id="twitter" href="http://twitter.com/PavlosChri" class="social-link"></a>
+                </div>
+                <div class="social">
+                    <div class="notice">
+                        <div class="notice-inside">
+                            Classic Stalker
+                        </div>
+                    </div>
+                    <a id="fb" href="http://www.facebook.com/pavloschris" class="social-link"></a>
+
+                </div>
+                <div class="social">
+                    <div class="notice">
+                        <div class="notice-inside">
+                            Procrastinating
+                        </div>
+                    </div>
+                    <a id="git" href="http://github.com/xpy" class="social-link"></a>
+
+                </div>
+                <div class="social">
+                    <div class="notice">
+                        <div class="notice-inside" style="width:230px;">
+                            setInterval( checkMail, 120000 );
+                        </div>
+                    </div>
+                    <a id="mailLink" href="mailto:pavloschris@gmail.com" class="social-link"></a>
+                </div>
+            </div>
+        </div>
+</div>        </div>
+    </section>
+    <footer>
+            </footer>
+</div>
+
+</body>
+</html>

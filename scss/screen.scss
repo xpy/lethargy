@@ -1,0 +1,548 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$textColor :#333;
+$bgColor   : #fafafa;
+$green    : #7dc01a;
+$red    : #af230c;
+$blue   : #9cd9ff;
+$purple : #804c99;
+$between : #ccc;
+@mixin animation($mix){
+  -webkit-animation: $mix; 
+  -moz-animation: $mix;
+  -o-animation: $mix;
+  animation: $mix;
+}
+
+@mixin keyframes($name) {
+@-webkit-keyframes #{$name} { @content; }
+@-moz-keyframes #{$name} { @content; }
+@-ms-keyframes #{$name} { @content; }
+@-o-keyframes #{$name} { @content; }
+@keyframes #{$name} { @content; }
+  }
+
+@mixin animation-fill-mode($mode){
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-fill-mode: $mode;
+  -o-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+
+}
+@import "compass/reset";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+html , * { box-sizing: border-box;-moz-box-sizing: border-box; font-family: Raleway, Georgia;}
+
+body { height: 100%; width: 100%; position: absolute; font-size: 12px; color: $textColor; background: $bgColor; }
+
+header { position: absolute;top: 0; left: 0; width: 100%;z-index: 2;}
+
+
+q{
+  &:before,&:after{ content: '"';}
+}
+#wrapper { height: 100%; position: relative; width: 100%;}
+#wrapper>input[type="radio"] { position: relative; height: 0; display: none; float: left;}
+#content { height: 100%; position: relative; width: 100%; white-space: nowrap; clear: left; overflow: hidden; }
+#rotator{  position: relative  ;  height: 0;  top: 10%;  width: 0;  margin: 0 10% ; padding: 20% 40%; }
+[name='imagesRadio']{ display: none; }
+
+#mainMenu {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+   ul { display: inline-block; position: relative;}
+   li{ display: inline-block; vertical-align: bottom; color: $textColor; font-size: 1.5em; margin:0 10px;
+   label { cursor: pointer;}}
+}
+
+.page3 { text-align: center;}
+.page {
+  display: inline-block; position: absolute; width: 100%; height: auto; min-height: 100%; top: 0; right: 0; /*bottom: 0;*/
+  left: 0; margin: auto;  white-space: normal; visibility:collapse;
+  h1 {
+    font-size: 3em;
+    padding: 20px 0;
+    text-align: center; display: block;
+    cursor: default;
+  }
+  .plainPageWrap {
+    max-width: 700px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+  .plainPage{
+    vertical-align: top;
+    font-size: 1.5em;
+    padding: 30px; box-sizing: border-box; -moz-box-sizing: border-box;
+    margin: auto;
+    line-height: 1.3em;
+    position: relative;
+    display: inline-block;
+    white-space: normal;
+    & p {
+      text-indent: 20px;
+      text-align: left;
+    }
+    & p:first-of-type{
+      padding: 20px 0 0 0;
+    }
+  }
+  .pageText{
+    font-size: 1.5em;
+    max-width: 700px;
+    padding: 30px; box-sizing: border-box; -moz-box-sizing: border-box;
+    margin: auto;
+    line-height: 1.3em;
+    position: relative;
+
+    &:before
+    {
+      content: '';
+      position: absolute;
+      bottoM: 14px;
+      width: 9px ;
+      height: 9px;
+      background: $bgColor;
+      box-shadow: 0 0 0 1px $textColor inset;
+      z-index: 1;
+      left: 38px;
+      border-radius: 50%;
+    }
+
+    p{
+      padding: 0 0 0 2px;
+      text-align: justify;
+      &:first-child:first-letter
+      {
+        font-size: 2em;
+        color: $bgColor;
+        background: $textColor;
+        padding: 0 0.3em;
+        margin:0 .1em 0 0;
+        cursor: pointer;
+      }
+
+      &:first-child:after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: -moz-calc(100% - 70px);
+        height: -webkit-calc(100% - 70px);
+        border: 1px dashed ($textColor);
+        border-right: none;
+        left: 25px;
+        top: 50px;
+      }
+      &:not(:first-child){
+        text-indent: 1em;
+        margin: 1em 0 0 0;
+      }
+    }
+
+  }
+}
+
+.constrict {
+  max-width: 900px;
+  padding: 30px; box-sizing: border-box; -moz-box-sizing: border-box;
+  margin: auto;
+  position: relative;
+}
+
+
+.page1 { @include  transform( scale(1));}
+  @for $i from 2 through 4 {
+ .page#{$i} {  @include  transform(rotate(90deg * ($i - 1)) scale(0.2)); opacity: 0; }
+  }
+
+#aboutPageCheck { display: none;}
+.aboutPagesLabel{
+  position: absolute; bottom: 0;
+  left: calc(100% - 15px);
+  left: -moz-calc(100% - 15px);
+  left: -webkit-calc(100% - 15px);
+  width: 0; height: 0; background: $bgColor;
+  border: 15px solid $bgColor;
+  border-left-color: $textColor;
+  @include transition(all 300ms ease-in-out);
+  cursor: pointer;
+}
+#bigImages { width: 300px; height: 300px; display: inline-block; position: relative;
+  -moz-perspective:900px;
+  -webkit-perspective:900px;
+  z-index: 1;
+li { width: 100%; height: 100%; position: absolute;
+  img { width: 100%; height: 100%;}
+  }
+}
+
+/*        */
+
+.lined{ display:table-row; width:auto; white-space:nowrap; position:relative; }
+
+.lined:before,.lined:after {content:'';
+  display:table-cell;
+  width:50%;
+  position:relative;
+  background: inline-image("line.png", unquote("image/png")) 0 13px repeat-x;
+  border-right: 7px solid $bgColor;
+}
+
+.lined:after { background-position: 100% 13px !important;  border-left: 7px solid $bgColor; border-right: none;
+}
+
+
+abbr{
+  cursor: help;
+  position: relative;
+  text-align: center;
+  &:after, &:before{
+    font-size: 1.5em;
+    position: absolute;
+    display: inline-block;
+    @include transform(scale(1));
+    @include  transition( scale 300ms ease-in-out);
+    @include  transition-property( transform -webkit-filter color);
+  }
+
+  &:after { content: '*';  top: -2px; right: -3px;    color: $textColor;   }
+
+  &:before { content: attr(data-title);   color: $bgColor;
+    @include transform(scale(0));
+    @include transform-origin(center, bottom, false);
+    display: inline-block; font-size: .8em; line-height: 1em; padding: 5px 10px;text-align: center; bottom: 100%; right: -45px; background: #333; border-radius: 3px; box-shadow: 0 0 0 1px $bgColor;
+    width: 120px;
+  text-indent: 0;}
+
+  &:hover:after
+  {
+    color: rgba(0,0,0,0);
+    border: 1px dotted #333;
+    border-top: none;
+    border-left: none;
+
+    @include animation(wh 700ms);
+    @include animation-fill-mode(forwards);
+
+  }
+  &:hover:before
+  {
+    @include transform(scale(1));
+  }
+
+}
+
+#imgLabels { position: absolute; right: 0; top: 100px;  width: auto; white-space: pre-line;text-align: left;}
+#imgLabels li label { display: inline-block; font-size: 1.3em; margin: 5px 0; cursor: pointer; position: relative; padding: 5px; white-space: nowrap;}
+.labelBg { position: absolute; top:0; left: -2000px; opacity: 0; visibility: collapse; width: 500%; height: 100%; background: $textColor; color:$bgColor; padding: 5px; text-indent: 2000px; overflow: hidden;
+  white-space: nowrap;
+  @include  transition( left 1000ms ease-in-out);
+  @include  transition-property(left width opacity visibility text-indent );
+}
+.imgCont {
+  visibility:collapse;
+  opacity: 0;
+  @include  transition( opacity 300ms ease);
+  -moz-transition-property :opacity, visibility , -moz-transform ;
+  -webkit-transition-property:  opacity, visibility , -webkit-transform ;
+  -moz-backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  -moz-transform-style:preserve-3d;
+  -webkit-transform-style:preserve-3d;
+  &:hover {  }
+  &:hover .effImage{ filter: url(svg/blur.svg#blur); -webkit-filter: blur(3px); opacity: 0.95; }
+  &:hover .imgDetailWrap {
+    box-shadow:0 0 10px rgba(0,0,0,0.5) ;
+    @include  transition(  box-shadow 300ms ease-in-out);
+  }
+  &:hover .imgDetail {opacity: 1;}
+}
+
+
+.imgDescWrap{ position: absolute; width: 100%; height: 100%;  pointer-events:none; background: inherit;
+  -moz-backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  @include transform(rotateY(180deg));
+  text-align: center;
+  &:after { position: relative; width: 0; height: 100%;content: ''; vertical-align: middle; display: inline-block;}
+}
+.imgDescBg{ position: absolute; width: 100%; height: 100%; background: inherit;filter: url(svg/inverse.svg#inverse); -webkit-filter:invert(82%);left: 0; top: 0; vertical-align: middle;
+  @include transform(rotateY(180deg));
+}
+.imgDesc {
+  position: relative; background: rgba(51,51,51,0.9); color: $bgColor;  padding: 40px;
+  //text-shadow: 0 0 10px #333,0 0 2px #333,0 0 3px #333,0 0 4px #333,0 0 5px #333,0 0 6px #333,0 0 7px #333,0 0 8px #333,0 0 9px #333;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1.2em;
+  p {
+    max-width: 200px;
+    text-align: justify;
+  }
+
+}
+.descCheck { position: absolute;display: none;}
+.descCheckLabel { position: absolute;display: inline-block; top: 0; right: -35px; width: 30px; height: 30px; background: $textColor url("img/details.png") 0 0 no-repeat;
+@include transition ( background 300ms ease-in-out); display: none; cursor: pointer;}
+
+.effImage { -webkit-filter: blur(0);filter: url(svg/blur.svg#blur0);
+  position: absolute; width: 100%; height: 100%;  opacity: 0; top: 0;
+  @include  transition( transform 700ms ease);
+  @include  transition-property(  opacity filter -webkit-filter );
+}
+.detailBg {
+  position: absolute; width: 100%; height: 100%;
+  background: rgba(250,250,250,0.85); opacity: 0; pointer-events:none;
+  width: 350px; height: 110%; top: -5%; left: -15px;
+  @include  transition( opacity 500ms ease-in-out);
+}
+
+#infoButs { position: absolute; top: 30px; left: 325px; z-index: 0;}
+.imgDetailWrap {display:inline-block;position: absolute; box-shadow:0 0 200px rgba(0,0,0,0);cursor: pointer; vertical-align: top;
+  @include  transition( transform 700ms ease-in-out);
+  @include  transition-property( box-shadow );
+
+  &:hover ~ .detailBg { opacity: 1; }
+}
+
+.imgDetail { width: 40px; height: 40px; background: inherit; background-attachment:fixed; position: absolute; vertical-align: top;
+  @include  transition( transform 700ms ease-in-out);
+  @include  transition-property( transform -webkit-filter box-shadow);
+  box-shadow: 0 0 0 0 #333;
+  opacity:1;
+  left: -97%; top: -97%;
+
+  &:hover { @include transform(scale(1) !important) ; box-shadow: 0 0 10px 0 #333; opacity: 1;z-index: 100; }
+}
+.imgDetail:not(:hover) .detailDesc {
+  visibility:collapse;
+  & span { text-shadow: 0 0 50px rgba(0,0,0,0) !important;
+  @include transition( text-shadow 200ms ease-out);}
+}
+.detailDesc {
+  position: absolute; font-size: 5em;
+  left: calc(100% + 10px);
+  left: -moz-calc(100% + 10px);
+  left: -webkit-calc(100% + 10px);
+& span{  color: rgba(0,0,0,0);}
+}
+
+#rotator, .page
+{
+  @include  transform-origin(center,1000px, false);
+  @include  transition( transform 700ms ease-in-out);
+  @include  transition-property( transform -webkit-filter opacity visibility);
+
+}
+
+
+/* ## CONTACT */
+#contact-form{
+  width: 70%;
+  margin: auto;
+  max-width: 250px;
+  min-width: 200px;
+}
+
+.input-holder{ position: relative; width: 100%; margin: 2px 0;}
+
+input[type='text'],input[type='email'],input[type='url'],textarea,.fakeInput {
+  border: 1px solid $textColor;
+  padding: 6px 30px 6px 6px;
+  box-shadow: none;
+  background: $bgColor;
+  width:  100%;
+  display: inline-block; margin: 1px 0;
+  resize: none;
+  font-size:14px;
+  height: 30px;
+  &:focus{
+    box-shadow:none;
+    outline: none;
+  }
+
+/*  &+label .label-inside {
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 0; padding-left: 100%;
+    background: inherit;
+  }*/
+
+  &+label , .contact-info  {
+   @include transition (all 300ms ease-in-out);
+   display: inline-block;
+   position: absolute;
+   top: 1px; right: 0px;
+   width: 30px; height: 30px;
+   background: $textColor  ;
+   font-size: 20px;
+   line-height: 28px;
+   text-align: center;
+   cursor: help;
+   border:1px solid transparent;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+
+   &:after {
+     content: attr(data-value);
+     position: absolute; width: auto; height: 100%;
+     left: 38px;
+     background: $textColor;
+     font-size: 13px; padding: 0 10px;
+     line-height: 25px;
+     @include  transition(opacity 300ms ease-in-out);
+     opacity: 0;
+     color: $bgColor;
+     white-space: nowrap;
+     pointer-events:none;
+   }
+   &:before {
+     position: absolute;
+     content: '';
+     width: 0; height: 0;
+     left: 22px;
+     top: 5px;
+     border: 8px solid transparent;
+     border-right-color: $textColor;
+     @include  transition(opacity 300ms ease-in-out);
+     opacity: 0;
+     pointer-events:none;
+   }
+
+ }
+
+  &:focus +label:before,&:focus +label:after,{
+    opacity: 1;
+    @include animation(vanish 7000ms);
+    @include animation-fill-mode(forwards);
+  }
+  &+label:hover:after,&+label:hover:before,&:focus +label:hover:after,&:focus +label:hover:before ,.contact-info:hover:before,.contact-info:hover:after{ opacity: 1 !important;
+  @include animation(none);
+  }
+
+  &:valid +label,.valid{
+    background-color: $bgColor;
+    color: $textColor;
+    border:1px solid $textColor;
+  }
+  &:optional +label,.optional {
+    background-color: $bgColor  ;
+    color: $textColor;
+    border:1px solid $textColor;
+    border-style: dashed;
+  }
+  &:invalid +label,.required {
+    background-color: $textColor;
+    color: $bgColor;
+    border:1px solid transparent;
+
+  }
+
+}
+
+#stars {
+  padding: 1px 30px 1px 0;
+  & input[type='radio']{
+    display: none;
+    &:checked ~ label.star{
+      background: $textColor url(img/stars.png) center -3px no-repeat !important;
+    }
+    &:hover:not(:checked) ~ label.star{
+      background: $between url(img/stars.png) center -3px no-repeat !important;
+    }
+    &:active ~ label.star{
+      background: $textColor url(img/stars.png) center -3px no-repeat !important;
+    }
+
+  }
+  & label.star {
+    float: right;
+    width: 30px; height: 26px;
+    background: $bgColor url(img/stars.png) center -3px no-repeat;
+    //border: 1px solid $textColor;
+    @include transition( background 300ms ease-in-out);
+    padding: 0 21px;
+    cursor: pointer;
+  }
+}
+
+#contact-exp {
+  padding: 4px 2px;
+  height: 36px;
+  & div{
+    width: 100%; height: 26px; display: inline-block;
+    font-size: 13px; padding: 0 5px;
+    line-height: 25px;
+    cursor: default;text-align: center;
+  }
+  & table {
+    width: 100%;
+    & td {
+      padding: 0 2px;
+    }
+  }
+}
+
+input[type='submit']{
+  background: $textColor;
+  color: $bgColor;
+  padding: 5px;
+  border: none;
+  box-shadow:  0 0 0 1px $textColor inset,0 0 0 2px $bgColor inset;
+  float: right;
+  cursor: pointer;
+}
+
+#socials { margin: 10px 0 0 0;}
+.social,#socials,.social-link { position: relative; display: inline-block; vertical-align: bottom;}
+.social { margin: 0 5px;}
+.social,.social-link { width: 29px; height: 29px; }
+.social-link { overflow: hidden; background: url("img/icons.png") 0 0 no-repeat;}
+#deviant  { background-position: -261px 0;}
+#twitter  { background-position: -232px 0;}
+#fb       { background-position: -319px 0;}
+#mailLink { background-position: -377px 0;}
+#git      {}
+.notice { position: absolute; width:0 ; height: 0; top: 0; left: 50%; text-align: center; pointer-events:none;}
+.notice-inside { position: absolute; width: auto; height: auto;bottom: 30px; background: $textColor; color: $bgColor; padding:3px 5px; margin: auto; left: -100%; right: -100%; width: 100px; left: -100px; right: -100px; font-size: 14px; text-align: center;
+@include transition(all 400ms ease-in-out);
+opacity: 0; visibility:collapse;
+  box-shadow: 0 0 3px #333;
+  &:after{
+   position: absolute; width: 8px; height: 8px; margin: auto; @include transform-origin(center center); @include transform( rotate(45deg)); bottom: -4px; left: 0; right: 0; content: ''; display: inline-block; background: $textColor;
+    box-shadow: 0 0 3px #333;
+  }
+}
+.social:hover .notice-inside { opacity: 1; bottom: 7px;visibility:visible;}
+
+/* ## MISC */
+
+@include keyframes(wh){
+ 0%{width:0%; height: 0%;}
+50%{width:0%; height: 100%;}
+100%{width: -moz-calc(100% + 2px);width: -webkit-calc(100% + 2px); height: 100%;}
+}
+
+@include keyframes(skew){
+ 0%{ @include  transform( skewY(0deg) translateY(0));}
+50%{@include  transform( skewY(-45deg) translateY(0));}
+100%{  @include  transform( skewY(0deg) translateY(-100%));}
+}
+
+
+@include keyframes(vanish){
+  0% { opacity:1}
+  5%{opacity:1}
+  80%{  opacity:.8}
+  100%{  opacity:0}
+}
+
+@import "nav.scss";

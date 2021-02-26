@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <filter id="inverse">
+
+    <feComponentTransfer>
+
+        <feFuncR type="table" tableValues="0.5 0"/>
+
+        <feFuncG type="table" tableValues="0.5 0"/>
+
+        <feFuncB type="table" tableValues="0.5 0"/>
+
+    </feComponentTransfer>
+
+</filter>
+</svg>

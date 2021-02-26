@@ -1,0 +1,35 @@
+
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+#homeRadio:checked ~ #content #rotator {   @include transform(rotate(0deg));}
+#galleryRadio:checked ~ #content #rotator {  @include transform(rotate(-90deg)); }
+#galleryRadio:checked ~ #content .page2 {  @include transform(rotate(90deg) scale(1));opacity: 1;visibility: visible; }
+//#homeRadio:not(:checked) ~ #content .page1 {  @include transform(scale(0.2));opacity: 0; }
+#homeRadio:checked ~ #content .page1 {opacity: 1 !important;  @include  transform( scale(1) !important); visibility: visible; }
+
+#aboutRadio:checked ~ #content .page3 {  @include transform( rotate(180deg) scale(1));opacity: 1; visibility: visible; }
+#aboutRadio:checked ~ #content #rotator {  @include transform(rotate(-180deg)); }
+
+#contactRadio:checked ~ #content .page4 {  @include transform(rotate(270deg) scale(1)); opacity: 1; visibility: visible;}
+#contactRadio:checked ~ #content #rotator {  @include transform(rotate(-270deg)); }
+
+header label {
+  padding:20px 7px 3px 7px;
+  display: inline-block;
+  border-top:1px solid rgba(0,0,0,0);
+  top: 1px;
+  @include transition( border-color 1000ms ease-in-out);
+}
+
+#homeRadio:checked ~ header label[for="homeRadio"]{  border-color: $textColor;}
+#galleryRadio:checked ~ header label[for="galleryRadio"]{ border-color: $textColor;}
+#aboutRadio:checked ~ header label[for="aboutRadio"]{ border-color: $textColor;}
+#contactRadio:checked ~ header label[for="contactRadio"]{border-color: $textColor;}
+
+
+.plainPageWrap .plainPage { @include transition(left 300ms ease-in-out); left: 0;}
+#aboutPageCheck:checked + .plainPageWrap .plainPage { left: -100%;   }
+
+#aboutPageCheck:checked + .plainPageWrap .aboutPagesLabel { left:0; border-left-color: $bgColor; border-right-color: $textColor;}
+
